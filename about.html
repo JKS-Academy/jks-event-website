@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +14,6 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-
     <div class="body-wrapper">
         <nav id="main-navbar" class="navbar fixed-top navbar-expand-lg bg-danger-subtle p-0">
             <div class="container">
@@ -35,13 +31,13 @@
                             <a class="nav-link" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/about.html">About</a>
+                            <a class="nav-link active" href="/about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="/registration.html">Registration</a>
+                            <a class="nav-link" href="/registration.html">Registration</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto">
@@ -59,197 +55,8 @@
                 </div>
             </div>
         </nav>
-        <div class="banner position-relative">
-            <img src="assets/images/bg/bg14.jpg" alt="">
-            <div class="position-absolute bottom-0 w-100 h-100 d-flex gap-3 align-items-center justify-content-center">
-                <a class="btn btn-danger" href="#jks-registration">JKS CUP - 23 Registration</a>
-                <a class="btn btn-outline-danger" href="#seminar-registration">Seminar Registration</a>
-            </div>
-        </div>
-        <div id="jks-registration" class="my-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h1>JKS CUP - 23 Registration</h1>
-                        <p>Register for the JKS CUP - 23</p>
-                        <p id="jksDescription"></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-8">
-                        <div class="card w-100 mb-3 shadow shadow-lg">
-                            <div class="card-body">
-                                <h5 class="card-title h3">Individual Registration</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
-                                <form action="">
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id="name"
-                                            placeholder="Participant Name">
-                                    </div>
-                                    <div class="row">
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <input placeholder="Date of Birth" class="form-control" type="text"
-                                                onfocus="(this.type='date')" onblur="(this.type='text')" id="dob">
-                                        </div>
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <input type="text" class="form-control" id="passNo"
-                                                placeholder="Passport No">
-                                        </div>
-                                    </div>
-                                    <label for="events" class="form-label">Events</label>
-                                    <div class="mb-3 form-check d-flex gap-5">
-                                        <div>
-                                            <input type="checkbox" class="form-check-input" id="kata">
-                                            <label class="form-check-label" for="kata">KATA</label>
-                                        </div>
-                                        <div>
-                                            <input type="checkbox" class="form-check-input" id="kumite">
-                                            <label class="form-check-label" for="kumite">KUMITE</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Gender</option>
-                                                <option value="1">Male</option>
-                                                <option value="2">Female</option>
-                                                <option value="3">Other</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Belt</option>
-                                                <option value="1">10th kyu white</option>
-                                                <option value="2">Black</option>
-                                                <option value="3">Brown</option>
-                                            </select>
-                                        </div>
+        <div style="height: 100rem;">
 
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id="club" placeholder="Club Name">
-                                    </div>
-                                    <div class="row">
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <input type="text" class="form-control" id="height"
-                                                placeholder="Height (inch)">
-                                        </div>
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <input type="text" class="form-control" id="weight"
-                                                placeholder="Weight (Kg)">
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Food</option>
-                                            <option value="1">Veg</option>
-                                            <option value="2">Non-Veg</option>
-                                            <option value="3">Not Required</option>
-                                        </select>
-                                    </div>
-                                    <div class="d-flex w-100 justify-content-end">
-                                        <button type="submit" class="btn btn-danger">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-4 d-flex flex-column gap-3">
-                        <div class="card w-100 mb-3 shadow shadow-lg">
-                            <div class="card-body">
-                                <h5 class="card-title h3">Club Registration</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
-                                <a href="#" class="btn btn-danger">Go to Club Registration</a>
-                            </div>
-                        </div>
-                        <div class="card w-100 mb-3 shadow shadow-lg">
-                            <div class="card-body">
-                                <h5 class="card-title h3">Contact</h5>
-                                <p class="card-text">
-                                    JKS CUP Coordinator<br />
-                                    Dubai, UAE<br />
-                                    +971 50 123 4567<br />
-                                    <a href="mailto:info@jkskarate.com">info@jkskarate.com</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="seminar-registration" class="mb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <h1>Seminar Registration</h1>
-                        <p>Upcoming Seminar: Subject on DD/MM/YYYY at Place of Event</p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-12 col-lg-8">
-                        <div class="card w-100 mb-3 shadow shadow-lg">
-                            <div class="card-body">
-                                <form action="">
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id="name"
-                                            placeholder="Participant Name">
-                                    </div>
-                                    <div class="row">
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <input placeholder="Date of Birth" class="form-control" type="text"
-                                                onfocus="(this.type='date')" onblur="(this.type='text')" id="dob">
-                                        </div>
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <input type="text" class="form-control" id="phNo" placeholder="Contact No">
-                                        </div>
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <input type="text" class="form-control" id="whNo" placeholder="Whatsapp No">
-                                        </div>
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <input type="email" class="form-control" id="email" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Gender</option>
-                                                <option value="1">Male</option>
-                                                <option value="2">Female</option>
-                                                <option value="3">Other</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" id="club" placeholder="Club Name">
-                                    </div>
-                                    <div class="row">
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <input type="text" class="form-control" id="grade" placeholder="Grade">
-                                        </div>
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <input type="text" class="form-control" id="country" placeholder="Country">
-                                        </div>
-                                        <div class="mb-3 col-12 col-lg-6">
-                                            <input type="text" class="form-control" id="state" placeholder="State">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex w-100 justify-content-end">
-                                        <button type="submit" class="btn btn-danger">Continue to Payment</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <footer id="web-footer" class="bg-dark text-white">
             <div class="container my-4">
