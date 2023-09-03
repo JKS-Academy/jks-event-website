@@ -46,3 +46,7 @@ body {
     text-decoration: none;
     color: white;
 }
+
+#footer-socials svg{
+    color: white;
+}
