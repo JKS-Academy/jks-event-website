@@ -232,10 +232,14 @@
                         <h3>Get Notified</h3>
                         <p>Get in touch with JKS academy, Get notified on upcoming events.</p>
                         <div class="newsletter-form">
-                            <form id="newsletter-form" action="">
+                            <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){
+                                window.location= 'index.html';}"></iframe>
+                            <form id="newsletter-form"
+                                action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSfMWRmWG21-L0wAXbdy3Yf_tDnuLIcXTVTMi0T4g8gSICh27A/formResponse"
+                                method="post" target="hiddenConfirm" onsubmit="submitted=true;">
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Email" aria-label="email"
-                                        aria-describedby="basic-addon2">
+                                    <input type="email" class="form-control" placeholder="Email" aria-label="email"
+                                        name="entry.1595533347" aria-describedby="basic-addon2">
                                     <button class="input-group-text" id="basic-addon2"
                                         style="background-color: #EF0514; color: white;">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"

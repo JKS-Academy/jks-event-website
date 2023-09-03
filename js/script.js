@@ -83,3 +83,5 @@ const changeLanguage = (language) => {
         window.location.reload();
     }
 };
+
+var submitted = false;
