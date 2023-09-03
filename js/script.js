@@ -42,7 +42,6 @@ const setArabic = () => {
     // Set the page to Arabic
     // Add your logic here to update the page content accordingly
     document.body.classList.add('rtl');
-    document.getElementById('basic-addon2').style.borderRadius = "0.5rem 0 0 0.5rem";
     document.getElementById('jks').innerHTML = arabicContent.jks;
     document.getElementById('worldHub').innerHTML = arabicContent.worldHub;
     document.getElementById('footerContent').innerHTML = arabicContent.footerContent;

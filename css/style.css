@@ -54,3 +54,15 @@ body {
 body.rtl {
     direction: rtl;
 }
+
+#newsletter-form{
+    direction: ltr !important;
+}
+
+#other-links{
+    direction: ltr !important;
+}
+
+#basic-contact {
+    direction: ltr !important;
+}
