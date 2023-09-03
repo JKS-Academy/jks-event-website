@@ -50,3 +50,7 @@ body {
 #footer-socials svg{
     color: white;
 }
+
+body.rtl {
+    direction: rtl;
+}
