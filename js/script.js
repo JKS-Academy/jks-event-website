@@ -85,3 +85,20 @@ const changeLanguage = (language) => {
 };
 
 var submitted = false;
+
+const handleScroll = () => {
+    const navbar = document.getElementById("main-navbar");
+    const logo = document.getElementById("navbar-logo");
+    console.log(window.scrollY);
+    if (window.scrollY > 100) { // You can adjust the scroll threshold
+        navbar.style.height = "5rem"; // Decrease the height
+        logo.classList.add("navbar-logo-small");
+        navbar.classList.add("navbar-bg");
+    } else {
+        navbar.style.height = "10rem"; // Reset the height
+        navbar.classList.remove("navbar-bg");
+        logo.classList.remove("navbar-logo-small");
+    }
+}
+
+window.addEventListener("scroll", handleScroll);
