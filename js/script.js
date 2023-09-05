@@ -98,7 +98,7 @@ const handleScroll = () => {
         logo.classList.add("navbar-logo-small");
         navbar.classList.add("navbar-bg");
     } else {
-        navbar.style.height = "10rem"; // Reset the height
+        navbar.style.height = "8rem"; // Reset the height
         navbar.classList.remove("navbar-bg");
         logo.classList.remove("navbar-logo-small");
     }
