@@ -187,3 +187,47 @@ body {
     color: #fff;
     background: rgba(255, 255, 255, 0.5);
 }
+
+.card {
+    border-radius: 0;
+
+}
+
+input {
+    position: relative;
+    border-radius: 0 !important;
+    border: 1px solid #5c0000 !important;
+    font-weight: bold !important;
+}
+
+label {
+    position: relative;
+    z-index: 1 !important;
+    font-weight: bold !important;
+    color: #5c0000 !important;
+}
+
+select {
+    position: relative;
+    border-radius: 0 !important;
+    border: 1px solid #5c0000 !important;
+    padding: 16px 12px !important;
+    font-weight: bold !important;
+    color: #5c0000 !important;
+    z-index: 1 !important;
+}
+
+textarea {
+    border-radius: 0 !important;
+    border: 1px solid #5c0000 !important;
+}
+
+#form-bg {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}

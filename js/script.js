@@ -107,28 +107,28 @@ const handleScroll = () => {
 window.addEventListener("scroll", handleScroll);
 
 // countDown
-const targetDate = new Date("2023-12-31T23:59:59").getTime(); // Replace with your target date and time
+// const targetDate = new Date("2023-12-31T23:59:59").getTime(); // Replace with your target date and time
 
-// Update the countdown every second
-const interval = setInterval(function () {
-    const currentDate = new Date().getTime();
-    const timeRemaining = targetDate - currentDate;
+// // Update the countdown every second
+// const interval = setInterval(function () {
+//     const currentDate = new Date().getTime();
+//     const timeRemaining = targetDate - currentDate;
 
-    if (timeRemaining <= 0) {
-        // If the target time has passed, clear the interval and display a message
-        clearInterval(interval);
-        document.getElementById("clock-c").innerHTML = "Countdown expired!";
-    } else {
-        // Calculate days, hours, minutes, and seconds remaining
-        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+//     if (timeRemaining <= 0) {
+//         // If the target time has passed, clear the interval and display a message
+//         clearInterval(interval);
+//         document.getElementById("clock-c").innerHTML = "Countdown expired!";
+//     } else {
+//         // Calculate days, hours, minutes, and seconds remaining
+//         const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+//         const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//         const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+//         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-        // Update the countdown elements with the calculated values
-        document.getElementById("days").innerHTML = String(days).padStart(2, "0");
-        document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
-        document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
-        document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
-    }
-}, 1000);
+//         // Update the countdown elements with the calculated values
+//         document.getElementById("days").innerHTML = String(days).padStart(2, "0");
+//         document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
+//         document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
+//         document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
+//     }
+// }, 1000);
