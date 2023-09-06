@@ -169,6 +169,30 @@ document.addEventListener('DOMContentLoaded', () => {
             kumiteCheck.setAttribute('required', true)
         }
     });
+
+    const labelSex = document.getElementById('labelSex');
+    const selectSex = document.getElementById('entry.1597875817');
+    selectSex.addEventListener('change', () => {
+        selectSex.value !== '' ? labelSex.style.display = 'block' : labelSex.style.display = 'none'
+    });
+
+    const labelBelt = document.getElementById('labelBelt');
+    const selectBelt = document.getElementById('entry.2099544009');
+    selectBelt.addEventListener('change', () => {
+        selectBelt.value !== '' ? labelBelt.style.display = 'block' : labelBelt.style.display = 'none'
+    });
+
+    const labelEmirate = document.getElementById('labelEmirate');
+    const selectEmirate = document.getElementById('entry.1515663701');
+    selectEmirate.addEventListener('change', () => {
+        selectEmirate.value !== '' ? labelEmirate.style.display = 'block' : labelEmirate.style.display = 'none'
+    });
+
+    const labelFood = document.getElementById('labelFood');
+    const selectFood = document.getElementById('entry.202302837');
+    selectFood.addEventListener('change', () => {
+        selectFood.value !== '' ? labelFood.style.display = 'block' : labelFood.style.display = 'none'
+    });
 });
 
 

@@ -279,3 +279,23 @@ label {
 #submit-button:hover {
     background-color: #350000;
 }
+
+#labelSex {
+    display: none;
+    margin-top: -0.40rem;
+}
+
+#labelBelt {
+    display: none;
+    margin-top: -0.40rem;
+}
+
+#labelEmirate {
+    display: none;
+    margin-top: -0.40rem;
+}
+
+#labelFood {
+    display: none;
+    margin-top: -0.40rem;
+}
