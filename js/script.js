@@ -9,6 +9,10 @@ const arabicContent = {
     playerName: "اسم اللاعب",
     dob: "(dd-mm-yyyy) تاريخ الميلاد",
     age: "عمر",
+    sex:  "جنس",
+    belt: "حزام",
+    height: "ارتفاع",
+    weight: "وزن",
 }
 
 const englishContent = {
@@ -21,6 +25,10 @@ const englishContent = {
     playerName: "Player Name",
     dob: "Date of Birth (dd-mm-yyyy)",
     age: "Age",
+    sex: "Sex",
+    belt: "Belt",
+    height: "Height",
+    weight: "Weight",
 }
 
 
@@ -51,6 +59,13 @@ const setEnglish = () => {
     if (document.getElementById('labelPlayerName')) document.getElementById('labelPlayerName').innerHTML = englishContent.playerName;
     if (document.getElementById('labelDob')) document.getElementById('labelDob').innerHTML = englishContent.dob;
     if (document.getElementById('labelAge')) document.getElementById('labelAge').innerHTML = englishContent.age;
+    if (document.getElementById('labelSex')) document.getElementById('labelSex').innerHTML = englishContent.sex;
+    if (document.getElementById('optionSex')) document.getElementById('optionSex').innerHTML = englishContent.sex;
+    if (document.getElementById('labelBelt')) document.getElementById('labelBelt').innerHTML = englishContent.belt;
+    if (document.getElementById('optionBelt')) document.getElementById('optionBelt').innerHTML = englishContent.belt;
+    if (document.getElementById('labelHeight')) document.getElementById('labelHeight').innerHTML = englishContent.height;
+    if (document.getElementById('labelWeight')) document.getElementById('labelWeight').innerHTML = englishContent.weight;
+
     // For example, you can change the text on the page to English
     languageButton.innerHTML = "English" // Simulate a click on the English button
 }
@@ -69,6 +84,13 @@ const setArabic = () => {
     if (document.getElementById('labelPlayerName')) document.getElementById('labelPlayerName').innerHTML = arabicContent.playerName;
     if (document.getElementById('labelDob')) document.getElementById('labelDob').innerHTML = arabicContent.dob;
     if (document.getElementById('labelAge')) document.getElementById('labelAge').innerHTML = arabicContent.age;
+    if (document.getElementById('labelSex')) document.getElementById('labelSex').innerHTML = arabicContent.sex;
+    if (document.getElementById('optionSex')) document.getElementById('optionSex').innerHTML = arabicContent.sex;
+    if (document.getElementById('labelBelt')) document.getElementById('labelBelt').innerHTML = arabicContent.belt;
+    if (document.getElementById('optionBelt')) document.getElementById('optionBelt').innerHTML = arabicContent.belt;
+    if (document.getElementById('labelHeight')) document.getElementById('labelHeight').innerHTML = arabicContent.height;
+    if (document.getElementById('labelWeight')) document.getElementById('labelWeight').innerHTML = arabicContent.weight;
+
     // For example, you can change the text on the page to Arabic
     languageButton.innerHTML = "عربي" // Simulate a click on the Arabic button
 }
