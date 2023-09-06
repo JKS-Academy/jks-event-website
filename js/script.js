@@ -11,8 +11,17 @@ const arabicContent = {
     age: "عمر",
     sex:  "جنس",
     belt: "حزام",
-    height: "ارتفاع",
-    weight: "وزن",
+    height: "(cm) ارتفاع",
+    weight: "(Kg) وزن",
+    emirate: "الإمارات",
+    mobile: "(max 12 digits) رقم الهاتف المحمول",
+    address: "عنوان",
+    events: "الأحداث",
+    clubName: "اسم النادي",
+    instructorName: "اسم المدرب",
+    food: "طعام",
+    waiver: "التنازل",
+    waiverDescription: "من خلال التحقق من هذا، أوافق على "
 }
 
 const englishContent = {
@@ -27,8 +36,17 @@ const englishContent = {
     age: "Age",
     sex: "Sex",
     belt: "Belt",
-    height: "Height",
-    weight: "Weight",
+    height: "Height (cm)",
+    weight: "Weight (kg)",
+    emirate: "Emirate",
+    mobile: "Mobile No (max 12 digits)",
+    address: "Address",
+    events: "Events",
+    clubName: "Club Name",
+    instructorName: "Instructor Name",
+    food: "Dietary Restrictions",
+    waiver: "Waiver",
+    waiverDescription: "By checking this, I Agree to the",
 }
 
 
@@ -65,6 +83,17 @@ const setEnglish = () => {
     if (document.getElementById('optionBelt')) document.getElementById('optionBelt').innerHTML = englishContent.belt;
     if (document.getElementById('labelHeight')) document.getElementById('labelHeight').innerHTML = englishContent.height;
     if (document.getElementById('labelWeight')) document.getElementById('labelWeight').innerHTML = englishContent.weight;
+    if (document.getElementById('labelEmirate')) document.getElementById('labelEmirate').innerHTML = englishContent.emirate;
+    if (document.getElementById('optionEmirate')) document.getElementById('optionEmirate').innerHTML = englishContent.emirate;
+    if (document.getElementById('labelMobile')) document.getElementById('labelMobile').innerHTML = englishContent.mobile;
+    if (document.getElementById('labelAddress')) document.getElementById('labelAddress').innerHTML = englishContent.address;
+    if (document.getElementById('labelEvents')) document.getElementById('labelEvents').innerHTML = englishContent.events;
+    if (document.getElementById('labelClubName')) document.getElementById('labelClubName').innerHTML = englishContent.clubName;
+    if (document.getElementById('labelInsructorName')) document.getElementById('labelInsructorName').innerHTML = englishContent.instructorName;
+    if (document.getElementById('labelFood')) document.getElementById('labelFood').innerHTML = englishContent.food;
+    if (document.getElementById('optionFood')) document.getElementById('optionFood').innerHTML = englishContent.food;
+    if (document.getElementById('labelWaiver')) document.getElementById('labelWaiver').innerHTML = englishContent.waiverDescription;
+    if (document.getElementById('waiverButton')) document.getElementById('waiverButton').innerHTML = englishContent.waiver;
 
     // For example, you can change the text on the page to English
     languageButton.innerHTML = "English" // Simulate a click on the English button
@@ -90,6 +119,17 @@ const setArabic = () => {
     if (document.getElementById('optionBelt')) document.getElementById('optionBelt').innerHTML = arabicContent.belt;
     if (document.getElementById('labelHeight')) document.getElementById('labelHeight').innerHTML = arabicContent.height;
     if (document.getElementById('labelWeight')) document.getElementById('labelWeight').innerHTML = arabicContent.weight;
+    if (document.getElementById('labelEmirate')) document.getElementById('labelEmirate').innerHTML = arabicContent.emirate;
+    if (document.getElementById('optionEmirate')) document.getElementById('optionEmirate').innerHTML = arabicContent.emirate;
+    if (document.getElementById('labelMobile')) document.getElementById('labelMobile').innerHTML = arabicContent.mobile;
+    if (document.getElementById('labelAddress')) document.getElementById('labelAddress').innerHTML = arabicContent.address;
+    if (document.getElementById('labelEvents')) document.getElementById('labelEvents').innerHTML = arabicContent.events;
+    if (document.getElementById('labelClubName')) document.getElementById('labelClubName').innerHTML = arabicContent.clubName;
+    if (document.getElementById('labelInsructorName')) document.getElementById('labelInsructorName').innerHTML = arabicContent.instructorName;
+    if (document.getElementById('labelFood')) document.getElementById('labelFood').innerHTML = arabicContent.food;
+    if (document.getElementById('optionFood')) document.getElementById('optionFood').innerHTML = arabicContent.food;
+    if (document.getElementById('labelWaiver')) document.getElementById('labelWaiver').innerHTML = arabicContent.waiverDescription;
+    if (document.getElementById('waiverButton')) document.getElementById('waiverButton').innerHTML = arabicContent.waiver;
 
     // For example, you can change the text on the page to Arabic
     languageButton.innerHTML = "عربي" // Simulate a click on the Arabic button

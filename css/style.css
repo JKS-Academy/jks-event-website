@@ -310,3 +310,7 @@ label {
     right: 0;
     width: fit-content;
 }
+
+.rtl #waiverStatement {
+    direction: ltr;
+}

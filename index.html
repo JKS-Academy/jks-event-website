@@ -173,7 +173,7 @@
                                                     <div class="form-floating">
                                                         <select class="form-select" aria-label="Emirate"
                                                             id="entry.1515663701" name="entry.1515663701" required>
-                                                            <option selected disabled value="">Emirate</option>
+                                                            <option selected disabled value="" id="optionEmirate">Emirate</option>
                                                             <option value="Abu Dhabi">Abu Dhabi</option>
                                                             <option value="Ajman">Ajman</option>
                                                             <option value="Dubai">Dubai</option>
@@ -182,7 +182,7 @@
                                                             <option value="Sharjah">Sharjah</option>
                                                             <option value="Umm Al Quwain">Umm Al Quwain</option>
                                                         </select>
-                                                        <label for="entry.1515663701" id="labelEmirate">Emirate</label>
+                                                        <label for="entry.1515663701" id="labelEmirate"></label>
                                                     </div>
                                                 </div>
                                                 <div class="mb-3 col-12 col-lg-6">
@@ -190,7 +190,7 @@
                                                         <input type="text" placeholder="Mobile No" class="form-control"
                                                             id="entry.1045485366" name="entry.1045485366"
                                                             pattern="[0-9]{12}" required>
-                                                        <label for="entry.1045485366">Mobile No (max 12 digits)</label>
+                                                        <label for="entry.1045485366" id="labelMobile"></label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -198,11 +198,11 @@
                                                 <textarea class="form-control" placeholder="Address"
                                                     id="entry.1283544520" name="entry.1283544520" style="height: 100px"
                                                     required></textarea>
-                                                <label for="entry.1283544520">Address</label>
+                                                <label for="entry.1283544520" id="labelAddress"></label>
                                             </div>
                                             <div class="row">
                                                 <div class="mb-3 col-12 col-lg-6 ps-4">
-                                                    <label for="events" class="form-label">Events</label>
+                                                    <label for="events" class="form-label" id="labelEvents"></label>
                                                     <div class="form-check d-flex gap-5">
                                                         <div>
                                                             <input type="checkbox" class="form-check-input"
@@ -225,7 +225,7 @@
                                                         <input type="text" placeholder="Name of the Club"
                                                             class="form-control" id="entry.173572202"
                                                             name="entry.173572202" required>
-                                                        <label for="entry.173572202">Club Name</label>
+                                                        <label for="entry.173572202" id="labelClubName"></label>
                                                     </div>
 
                                                 </div>
@@ -236,14 +236,14 @@
                                                         <input type="text" placeholder="Name of the Instructor"
                                                             class="form-control" id="entry.232038116"
                                                             name="entry.232038116" required>
-                                                        <label for="entry.232038116">Instructor Name</label>
+                                                        <label for="entry.232038116" id="labelInsructorName">Instructor Name</label>
                                                     </div>
                                                 </div>
                                                 <div class="mb-3 col-12 col-lg-6">
                                                     <div class="form-floating">
                                                         <select class="form-select" aria-label="Dietary restrictions"
                                                             id="entry.202302837" name="entry.202302837" required>
-                                                            <option selected disabled value="">Dietary Restrictions
+                                                            <option selected disabled value="" id="optionFood">
                                                             </option>
                                                             <option value="Veg">Veg</option>
                                                             <option value="Non Veg">Non-Veg</option>
@@ -256,7 +256,7 @@
                                                 <div class="ps-2">
                                                     <input type="checkbox" class="form-check-input" id="entry.819354817"
                                                         name="entry.819354817" value="I agree" required>
-                                                    <label class="form-check-label" for="entry.819354817">By checking
+                                                    <label class="form-check-label" for="entry.819354817" id="labelWaiver">By checking
                                                         this, I Agree to the
                                                     </label>
                                                     <button id="waiverButton" type="button" role="li'" class="fw-bold"
@@ -276,7 +276,7 @@
                                                     <div id="flush-collapseOne" class="accordion-collapse collapse"
                                                         aria-labelledby="flush-headingOne"
                                                         data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body">I <span id="waiverName"
+                                                        <div class="accordion-body" id="waiverStatement">I <span id="waiverName"
                                                                 class="fw-bold text-decoration-underline"></span> hereby
                                                             submit my application for the participation in the
                                                             18th NATIONAL KARATE CHAMPIONSHIP, JKS CUP 2023, on 8th JAN
