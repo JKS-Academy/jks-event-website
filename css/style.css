@@ -314,3 +314,15 @@ label {
 .rtl #waiverStatement {
     direction: ltr;
 }
+
+.modal-dialog {
+    margin: 0;
+}
+
+#splashImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+}

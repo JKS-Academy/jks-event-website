@@ -9,7 +9,7 @@ const arabicContent = {
     playerName: "اسم اللاعب",
     dob: "(dd-mm-yyyy) تاريخ الميلاد",
     age: "عمر",
-    sex:  "جنس",
+    sex: "جنس",
     belt: "حزام",
     height: "(cm) ارتفاع",
     weight: "(Kg) وزن",
@@ -219,6 +219,16 @@ const openAccordion = () => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    const modalButton = document.getElementById('modalButton');
+    modalButton.click();
+
+    setTimeout(() => {
+        modalButton.click();
+        setTimeout(() => {
+            document.getElementById('exampleModal').style.zIndex = -1;
+        }, 500);
+    }, 2000);
+
     const name = document.getElementById('entry.2092238618');
     const waiverName = document.getElementById('waiverName');
     name.addEventListener('input', () => {
