@@ -145,6 +145,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const dob = document.getElementById('entry.1503997084');
     dob.addEventListener('input', calculateAge);
+
+    const kataCheck = document.getElementById('kataCheck');
+    const kumiteCheck = document.getElementById('kumiteCheck');
+    kataCheck.addEventListener('change', () => {
+        if (kataCheck.checked && !kumiteCheck.checked) {
+            kumiteCheck.removeAttribute('required')
+        } else if (!kataCheck.checked && kumiteCheck.checked) {
+            kataCheck.removeAttribute('required')
+        } else {
+            kataCheck.setAttribute('required', true)
+            kumiteCheck.setAttribute('required', true)
+        }
+    });
+
+    kumiteCheck.addEventListener('change', () => {
+        if (kataCheck.checked && !kumiteCheck.checked) {
+            kumiteCheck.removeAttribute('required')
+        } else if (!kataCheck.checked && kumiteCheck.checked) {
+            kataCheck.removeAttribute('required')
+        } else {
+            kataCheck.setAttribute('required', true)
+            kumiteCheck.setAttribute('required', true)
+        }
+    });
 });
 
 
