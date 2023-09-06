@@ -132,3 +132,6 @@ window.addEventListener("scroll", handleScroll);
 //         document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
 //     }
 // }, 1000);
+const openAccordion = () => {
+    document.getElementById("accordion-button").click();
+}

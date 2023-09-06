@@ -48,7 +48,7 @@ body {
     color: white;
 }
 
-#footer-socials svg{
+#footer-socials svg {
     color: white;
 }
 
@@ -56,11 +56,11 @@ body.rtl {
     direction: rtl;
 }
 
-#newsletter-form{
+#newsletter-form {
     direction: ltr !important;
 }
 
-#other-links{
+#other-links {
     direction: ltr !important;
 }
 
@@ -73,7 +73,8 @@ body.rtl {
 }
 
 #main-navbar {
-    transition: 0.3s; /* Add a smooth transition effect */
+    transition: 0.3s;
+    /* Add a smooth transition effect */
 }
 
 .navbar-logo-small {
@@ -184,14 +185,14 @@ body {
     font-weight: bold !important;
 }
 
-.btn-demo:hover, .btn-demo:focus {
+.btn-demo:hover,
+.btn-demo:focus {
     color: #fff;
     background: rgba(255, 255, 255, 0.5);
 }
 
 .card {
     border-radius: 0;
-
 }
 
 /* Registration Form */
@@ -245,4 +246,32 @@ label {
 
 #web-footer {
     background-color: #350000;
+}
+
+#accordion-button {
+    color: #5c0000 !important;
+}
+
+#waiverButton {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.accordion-body {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #5c0000;
+    color: #5c0000;
+}
+
+#submit-button {
+    background-color: #5c0000;
+    border: 0;
+    color: white;
+    margin-top: 1rem;
 }
