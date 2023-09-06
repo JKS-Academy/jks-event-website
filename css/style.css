@@ -275,3 +275,7 @@ label {
     color: white;
     margin-top: 1rem;
 }
+
+#submit-button:hover {
+    background-color: #350000;
+}

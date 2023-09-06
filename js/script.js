@@ -135,3 +135,11 @@ window.addEventListener("scroll", handleScroll);
 const openAccordion = () => {
     document.getElementById("accordion-button").click();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const name = document.getElementById('entry.2092238618');
+    const waiverName = document.getElementById('waiverName');
+    name.addEventListener('input', () => {
+        waiverName.innerHTML = name.value;
+    });
+});
