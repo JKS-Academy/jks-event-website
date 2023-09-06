@@ -92,7 +92,7 @@
                                             <div class="mb-3 form-floating">
                                                 <input type="text" placeholder="Name of the Player" class="form-control"
                                                     id="entry.2092238618" name="entry.2092238618" required>
-                                                <label for="entry.2092238618">Player Name</label>
+                                                <label for="entry.2092238618" id="labelPlayerName"></label>
                                             </div>
                                             <div class="row">
                                                 <div class="mb-3 col-12 col-lg-6">
@@ -101,7 +101,7 @@
                                                             type="text" required onfocus="(this.type='date')"
                                                             onblur="(this.type='text')" id="entry.1503997084"
                                                             name="entry.1503997084">
-                                                        <label for="entry.1503997084">Date of Birth (dd-mm-yyyy)</label>
+                                                        <label for="entry.1503997084" id="labelDob"></label>
                                                     </div>
                                                 </div>
                                                 <div class="mb-3 col-12 col-lg-6">
@@ -109,7 +109,7 @@
                                                         <input placeholder="Age" class="form-control" type="text"
                                                             onfocus="(this.type='number')" onblur="(this.type='text')"
                                                             id="entry.342131157" name="entry.342131157" required>
-                                                        <label for="entry.342131157">Age</label>
+                                                        <label for="entry.342131157" id="labelAge"></label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -413,7 +413,7 @@
         <footer id="web-footer" class="text-white">
             <div class="container my-4">
                 <div class="row">
-                    <div class="col-12 col-lg-4 d-flex flex-column gap-2">
+                    <div class="col-12 col-lg-4 d-flex flex-column gap-2 mb-5">
                         <a class="navbar-brand p-0" href="">
                             <img src="assets/images/logo-white.png" alt="JKS Academy Logo">
                         </a>
@@ -428,7 +428,7 @@
                                     class="bi bi-telephone" viewBox="0 0 16 16">
                                     <path
                                         d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                                </svg> +971 50 123 4567
+                                </svg> +971 55 375 2909
                             </div>
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -442,9 +442,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-5 d-flex flex-column gap-2 justify-content-center">
-                        <h3>Get Notified</h3>
-                        <p>Get in touch with JKS academy, Get notified on upcoming events.</p>
+                    <div class="col-12 col-lg-5 d-flex flex-column gap-2 justify-content-center mb-5">
+                        <h3 id="getNotified"></h3>
+                        <p id="getNotifiedDescription"></p>
                         <div class="newsletter-form">
                             <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){
                                 window.location= 'index.html';}"></iframe>

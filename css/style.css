@@ -221,9 +221,10 @@ label {
 
 .registration-form select {
     position: relative;
+    appearance: none;
     border-radius: 0 !important;
     border: 1px solid #5c0000 !important;
-    padding: 16px 12px !important;
+    padding: 16px 30px 16px 12px !important;
     font-weight: bold !important;
     color: #5c0000 !important;
     z-index: 1 !important;
@@ -298,4 +299,14 @@ label {
 #labelFood {
     display: none;
     margin-top: -0.40rem;
+}
+
+.rtl .accordion-button::after {
+    margin-right: auto;
+    margin-left: 0 !important;
+}
+
+.rtl .form-floating>label {
+    right: 0;
+    width: fit-content;
 }
