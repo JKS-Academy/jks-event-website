@@ -142,4 +142,34 @@ document.addEventListener('DOMContentLoaded', () => {
     name.addEventListener('input', () => {
         waiverName.innerHTML = name.value;
     });
+
+    const dob = document.getElementById('entry.1503997084');
+    dob.addEventListener('input', calculateAge);
 });
+
+
+const calculateAge = () => {
+    // Get the selected birthdate from the input field
+    const birthdateInput = document.getElementById("entry.1503997084");
+    const birthdate = new Date(birthdateInput.value);
+
+    // Get the current date
+    const currentDate = new Date();
+
+    // Calculate the age
+    var age = currentDate.getFullYear() - birthdate.getFullYear();
+
+    // Check if the birthday has already occurred this year
+    if (
+        currentDate.getMonth() < birthdate.getMonth() ||
+        (currentDate.getMonth() === birthdate.getMonth() &&
+            currentDate.getDate() < birthdate.getDate())
+    ) {
+        // Subtract 1 from age if the birthday hasn't occurred yet this year
+        age--;
+    }
+
+    // Display the calculated age
+    const ageField = document.getElementById("entry.342131157");
+    ageField.value = age;
+}
