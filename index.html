@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <div class="body-wrapper">
         <!-- Button trigger modal -->
         <button id="modalButton" type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -96,9 +97,10 @@
                                 <p class="card-text">With supporting text below as a natural lead-in to additional
                                     content.</p> -->
                                     <div id="registration-form" class="registration-form">
+                                        <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="registration()"></iframe>
                                         <form
                                             action="https://docs.google.com/forms/d/e/1FAIpQLSdfTfqCm_4t5EEoj9jePnSir352YcpnOj4lT_-HuciiAo_55g/formResponse"
-                                            method="post">
+                                            method="post" target="hiddenConfirm" onsubmit="submitted=true;">
                                             <div class="mb-3 form-floating">
                                                 <input type="text" placeholder="Name of the Player" class="form-control"
                                                     id="entry.2092238618" name="entry.2092238618" required>

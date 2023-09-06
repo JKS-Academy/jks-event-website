@@ -313,3 +313,16 @@ const calculateAge = () => {
     const ageField = document.getElementById("entry.342131157");
     ageField.value = age;
 }
+
+const registration = () => {
+    if (submitted) {
+        const ok = Swal.fire({
+            title: 'Registration Successful',
+            text: 'Your registration has been submitted successfully',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        }).then(() => {
+            window.location = 'https://jkskarate.com/';
+        });
+    }
+}
