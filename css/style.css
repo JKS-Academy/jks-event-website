@@ -19,9 +19,13 @@ body {
 
 .navbar-brand img {
     width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
+    height: 100%;
     margin-right: 8rem;
+}
+
+.footer-brand img {
+    width: 8rem;
+    height: 100%;
 }
 
 .nav-link {
@@ -46,9 +50,9 @@ body {
     object-fit: cover;
 }
 
-#footerLogo {
+.footerLogo {
     border-radius: 50%;
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.8);
 }
 
 #other-links a {
@@ -88,7 +92,7 @@ body.rtl {
 .navbar-logo-small {
     transition: 0.3s;
     width: 5rem !important;
-    height: 5rem !important;
+    height: 100% !important;
     border-radius: 50%;
 }
 

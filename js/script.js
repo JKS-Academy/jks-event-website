@@ -175,7 +175,7 @@ var submitted = false;
 const handleScroll = () => {
     const navbar = document.getElementById("main-navbar");
     const logo = document.getElementById("navbar-logo");
-    if (window.scrollY > 100) { // You can adjust the scroll threshold
+    if (window.scrollY > 30) { // You can adjust the scroll threshold
         navbar.style.height = "5rem"; // Decrease the height
         logo.classList.add("navbar-logo-small");
         navbar.classList.add("navbar-bg");
