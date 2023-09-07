@@ -359,3 +359,7 @@ label {
 .rtl footer {
     direction: ltr;
 }
+
+.rtl #compInfo {
+    direction: ltr;
+}
