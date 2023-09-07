@@ -2,7 +2,7 @@
 const arabicContent = {
     jks: "يعد الاتحاد الياباني للكاراتيه شوتو أحد أكثر منظمات الكاراتيه الشوتوكان تأثيرًا في العالم. إنها أيضًا واحدة من أكثر منظمات الكاراتيه انتشارًا بما في ذلك 72 دولة وأكثر من 2 مليون عضو. تم تشغيله بنجاح تحت إشراف شيهان ماساو كاجاوا وهو دان الثامن في JKF والرئيس الفني للاتحاد العالمي للكاراتيه.",
     worldHub: "يتبع معظم لاعبي الكاراتيه شيهان كاغاوا ماساو، لذا فهم يرغبون بشدة في حضور الندوات العالمية ودورات المدربين للحصول على الدبلومات واختبار DAN في اليابان. يواجه الأعضاء من خارج أوروبا ودول غير أمريكية قيودًا على السفر إلى اليابان بسبب إجراءات التأشيرة وتكاليفها. نحن، JKS UAE نريد دعوة متابعي الكاراتيه العالميين إلى دبي من خلال إجراء الندوات الدولية والكأس الدولية ودورة دبلوم المدربين. سيكون المدربون اليابانيون متاحين في Dojo الخاص بنا لتزويدنا بكل الدعم لتطوير الكاراتيه في جميع أنحاء العالم.",
-    footerContent: "Location : LLFPM School , Meydan Dubai - UAE <br /> Kumite League Date & Time : 16th September 2023, 5PM to 9 PM ( UAE Time ) <br/> Seminar Date & Time : 17th September 2023, 2PM to 5 PM (UAE Time )",
+    footerContent: "Location : LLFPM School , Meydan Dubai - UAE <br /> Kumite League Date & Time : 16th September 2023, 5PM to 9 PM ( UAE Time ) <br/> Seminar Date & Time : 17th September 2023, 2PM to 5 PM (UAE Time ) <br/> Last Registration : 14th September 2023 ( 11 PM UAE Time )",
     jksDescription: "لوريم إيبسوم هو ببساطة نص وهمي من صناعة الطباعة والتنضيد. لقد كان لوريم إيبسوم هو النص الوهمي القياسي في الصناعة منذ القرن السادس عشر، عندما أخذت طابعة غير معروفة لوح الكتابة وخلطته لصنع نموذج كتاب. لقد صمدت ليس فقط لخمسة قرون، بل قفزت أيضًا إلى التنضيد الإلكتروني، وبقيت دون تغيير بشكل أساسي.",
     getNotified: "الحصول على إخطار",
     getNotifiedDescription: "تواصل مع أكاديمية JKS واحصل على إشعارات بشأن الأحداث القادمة",
@@ -13,7 +13,7 @@ const arabicContent = {
     category: "فئة",
     height: "(cm) ارتفاع",
     weight: "(Kg) وزن",
-    emirate: "الإمارات",
+    country: "دولة",
     mobile: "(max 12 digits) رقم الهاتف المحمول",
     address: "عنوان",
     events: "الأحداث",
@@ -27,7 +27,7 @@ const arabicContent = {
 const englishContent = {
     jks: "Japan Karate Shoto Federation is one of the most influential Shotokan karate organization in the world. Its also one of the most reaching karate organization including 72 countries over 2 million members. Its successfully running under the direction of Shihan Masao Kagawa who is 8th Dan of JKF and Technical chairman of World Karate Federation.",
     worldHub: "Most of the karatekas are following Shihan Kagawa Masao so they are eagerly want to attend world seminar and diploma Instructors courses and DAN Examination in Japan. The members from non Europe and non American countries are facing restriction to travel japan due to the visa procedure and cost. We , the JKS UAE wants to invite the world karate followers to Dubai by conducting International Seminars , International cup and Instructors Diploma course. Japanese instructors will be available in our Dojo to give us all the support to develop karate world wide.",
-    footerContent: "Location : LLFPM School , Meydan Dubai - UAE <br /> Kumite League Date & Time : 16th September 2023, 5PM to 9 PM ( UAE Time ) <br/> Seminar Date & Time : 17th September 2023, 2PM to 5 PM (UAE Time )",
+    footerContent: "Location : LLFPM School , Meydan Dubai - UAE <br /> Kumite League Date & Time : 16th September 2023, 5PM to 9 PM ( UAE Time ) <br/> Seminar Date & Time : 17th September 2023, 2PM to 5 PM (UAE Time ) <br/> Last Registration : 14th September 2023 ( 11 PM UAE Time )",
     jksDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     getNotified: "Get Notified",
     getNotifiedDescription: "Get in touch with JKS academy, Get notified on upcoming events",
@@ -38,7 +38,7 @@ const englishContent = {
     category: "Category",
     height: "Height (cm)",
     weight: "Weight (kg)",
-    emirate: "Emirate",
+    country: "Country",
     mobile: "Mobile No (max 12 digits)",
     address: "Address",
     events: "Events",
@@ -83,8 +83,7 @@ const setEnglish = () => {
     if (document.getElementById('optionBelt')) document.getElementById('optionBelt').innerHTML = englishContent.category;
     if (document.getElementById('labelHeight')) document.getElementById('labelHeight').innerHTML = englishContent.height;
     if (document.getElementById('labelWeight')) document.getElementById('labelWeight').innerHTML = englishContent.weight;
-    if (document.getElementById('labelEmirate')) document.getElementById('labelEmirate').innerHTML = englishContent.emirate;
-    if (document.getElementById('optionEmirate')) document.getElementById('optionEmirate').innerHTML = englishContent.emirate;
+    if (document.getElementById('labelCountry')) document.getElementById('labelCountry').innerHTML = englishContent.country;
     if (document.getElementById('labelMobile')) document.getElementById('labelMobile').innerHTML = englishContent.mobile;
     if (document.getElementById('labelAddress')) document.getElementById('labelAddress').innerHTML = englishContent.address;
     if (document.getElementById('labelEvents')) document.getElementById('labelEvents').innerHTML = englishContent.events;
@@ -119,8 +118,7 @@ const setArabic = () => {
     if (document.getElementById('optionBelt')) document.getElementById('optionBelt').innerHTML = arabicContent.category;
     if (document.getElementById('labelHeight')) document.getElementById('labelHeight').innerHTML = arabicContent.height;
     if (document.getElementById('labelWeight')) document.getElementById('labelWeight').innerHTML = arabicContent.weight;
-    if (document.getElementById('labelEmirate')) document.getElementById('labelEmirate').innerHTML = arabicContent.emirate;
-    if (document.getElementById('optionEmirate')) document.getElementById('optionEmirate').innerHTML = arabicContent.emirate;
+    if (document.getElementById('labelCountry')) document.getElementById('labelCountry').innerHTML = arabicContent.country;
     if (document.getElementById('labelMobile')) document.getElementById('labelMobile').innerHTML = arabicContent.mobile;
     if (document.getElementById('labelAddress')) document.getElementById('labelAddress').innerHTML = arabicContent.address;
     if (document.getElementById('labelEvents')) document.getElementById('labelEvents').innerHTML = arabicContent.events;
@@ -272,12 +270,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectBelt = document.getElementById('entry.2099544009');
     selectBelt.addEventListener('change', () => {
         selectBelt.value !== '' ? labelBelt.style.display = 'block' : labelBelt.style.display = 'none'
-    });
-
-    const labelEmirate = document.getElementById('labelEmirate');
-    const selectEmirate = document.getElementById('entry.1515663701');
-    selectEmirate.addEventListener('change', () => {
-        selectEmirate.value !== '' ? labelEmirate.style.display = 'block' : labelEmirate.style.display = 'none'
     });
 
     const labelFood = document.getElementById('labelFood');
