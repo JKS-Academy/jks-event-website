@@ -10,7 +10,7 @@ const arabicContent = {
     dob: "(dd-mm-yyyy) تاريخ الميلاد",
     age: "عمر",
     sex: "جنس",
-    belt: "حزام",
+    category: "فئة",
     height: "(cm) ارتفاع",
     weight: "(Kg) وزن",
     emirate: "الإمارات",
@@ -35,7 +35,7 @@ const englishContent = {
     dob: "Date of Birth (dd-mm-yyyy)",
     age: "Age",
     sex: "Sex",
-    belt: "Belt",
+    category: "Category",
     height: "Height (cm)",
     weight: "Weight (kg)",
     emirate: "Emirate",
@@ -79,8 +79,8 @@ const setEnglish = () => {
     if (document.getElementById('labelAge')) document.getElementById('labelAge').innerHTML = englishContent.age;
     if (document.getElementById('labelSex')) document.getElementById('labelSex').innerHTML = englishContent.sex;
     if (document.getElementById('optionSex')) document.getElementById('optionSex').innerHTML = englishContent.sex;
-    if (document.getElementById('labelBelt')) document.getElementById('labelBelt').innerHTML = englishContent.belt;
-    if (document.getElementById('optionBelt')) document.getElementById('optionBelt').innerHTML = englishContent.belt;
+    if (document.getElementById('labelBelt')) document.getElementById('labelBelt').innerHTML = englishContent.category;
+    if (document.getElementById('optionBelt')) document.getElementById('optionBelt').innerHTML = englishContent.category;
     if (document.getElementById('labelHeight')) document.getElementById('labelHeight').innerHTML = englishContent.height;
     if (document.getElementById('labelWeight')) document.getElementById('labelWeight').innerHTML = englishContent.weight;
     if (document.getElementById('labelEmirate')) document.getElementById('labelEmirate').innerHTML = englishContent.emirate;
@@ -115,8 +115,8 @@ const setArabic = () => {
     if (document.getElementById('labelAge')) document.getElementById('labelAge').innerHTML = arabicContent.age;
     if (document.getElementById('labelSex')) document.getElementById('labelSex').innerHTML = arabicContent.sex;
     if (document.getElementById('optionSex')) document.getElementById('optionSex').innerHTML = arabicContent.sex;
-    if (document.getElementById('labelBelt')) document.getElementById('labelBelt').innerHTML = arabicContent.belt;
-    if (document.getElementById('optionBelt')) document.getElementById('optionBelt').innerHTML = arabicContent.belt;
+    if (document.getElementById('labelBelt')) document.getElementById('labelBelt').innerHTML = arabicContent.category;
+    if (document.getElementById('optionBelt')) document.getElementById('optionBelt').innerHTML = arabicContent.category;
     if (document.getElementById('labelHeight')) document.getElementById('labelHeight').innerHTML = arabicContent.height;
     if (document.getElementById('labelWeight')) document.getElementById('labelWeight').innerHTML = arabicContent.weight;
     if (document.getElementById('labelEmirate')) document.getElementById('labelEmirate').innerHTML = arabicContent.emirate;
