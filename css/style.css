@@ -3,7 +3,7 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #fff;
-    background: rgba(253,25,5, 0.8);
+    background: #070707;
     padding: 0;
     margin: 0;
 }
@@ -29,15 +29,15 @@ body {
 }
 
 .nav-link {
-    color: white;
-}
-
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: wheat;
 }
 
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgba(253,25,5, 1);
+}
+
 .nav-item .active {
-    color: wheat !important;
+    color: rgba(253,25,5, 1);
 }
 
 #main-navbar {
@@ -81,11 +81,12 @@ body.rtl {
 }
 
 .nav-link:hover {
-    color: wheat;
+    color: rgb(253,25,5);
 }
 
 #main-navbar {
     transition: 0.3s;
+    background: linear-gradient(135deg, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)) !important;
     /* Add a smooth transition effect */
 }
 
@@ -97,7 +98,7 @@ body.rtl {
 }
 
 .navbar-bg {
-    background: linear-gradient(135deg, rgba(253,25,5, 0.8), rgba(253,25,5, 0.8)) !important;
+    background: linear-gradient(135deg, rgb(53, 0, 0, 0.8), rgb(53, 0, 0, 0.8)) !important;
 }
 
 .banner img {
@@ -108,7 +109,7 @@ body.rtl {
 
 @media screen and (max-width: 994px) {
     #navbarSupportedContent {
-        background: linear-gradient(135deg, rgba(248, 215, 218, 0.9), rgba(248, 215, 218, 0.9)) !important;
+        background: linear-gradient(135deg, rgb(53, 0, 0, 0.8), rgb(53, 0, 0, 0.8)) !important;
     }
 
     #splashImage {
@@ -287,14 +288,14 @@ label {
 }
 
 #submit-button {
-    background-color: rgba(253,25,5, 0.7);
-    border: 2px rgba(253,25,5, 1) !important;
+    background-color: rgba(53, 0, 0, 0.7);
+    border: 2px rgba(53, 0, 0, 0.8) !important;
     color: white;
     margin-top: 1rem;
 }
 
 #submit-button:hover {
-    background-color: rgba(253,25,5, 1);
+    background-color: rgba(53, 0, 0, 1);
 }
 
 #labelSex {
@@ -348,7 +349,7 @@ label {
 }
 
 #copyrightFooter {
-    background-color: rgba(253,25,5, 0.8);
+    background: linear-gradient(135deg, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)) !important;
 }
 
 #jksTitle {
