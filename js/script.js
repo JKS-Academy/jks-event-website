@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const labelFood = document.getElementById('labelFood');
     const selectFood = document.getElementById('entry.202302837');
-    selectFood.addEventListener('change', () => {
+    if(selectFood) selectFood.addEventListener('change', () => {
         selectFood.value !== '' ? labelFood.style.display = 'block' : labelFood.style.display = 'none'
     });
 });
