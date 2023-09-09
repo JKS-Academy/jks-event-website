@@ -32,12 +32,13 @@ body {
     color: wheat;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: rgba(253,25,5, 1);
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgba(253, 25, 5, 1);
 }
 
 .nav-item .active {
-    color: rgba(253,25,5, 1);
+    color: rgba(253, 25, 5, 1);
 }
 
 #main-navbar {
@@ -81,7 +82,7 @@ body.rtl {
 }
 
 .nav-link:hover {
-    color: rgb(253,25,5);
+    color: rgb(253, 25, 5);
 }
 
 #main-navbar {
@@ -98,7 +99,7 @@ body.rtl {
 }
 
 .navbar-bg {
-    background: linear-gradient(135deg, rgb(53, 0, 0, 0.8), rgb(53, 0, 0, 0.8)) !important;
+    background: linear-gradient(135deg, rgb(53, 0, 0, 0.8), rgb(53, 0, 0, 0.8));
 }
 
 .banner img {
@@ -109,7 +110,7 @@ body.rtl {
 
 @media screen and (max-width: 994px) {
     #navbarSupportedContent {
-        background: linear-gradient(135deg, rgb(53, 0, 0, 0.8), rgb(53, 0, 0, 0.8)) !important;
+        background: #070707;
     }
 
     #splashImage {
