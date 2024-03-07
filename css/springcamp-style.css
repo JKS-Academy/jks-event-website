@@ -1,11 +1,15 @@
 body {
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     line-height: 1.7;
-    color: #fff;
-    background: #070707;
+    color: #000;
+    background: #a6fe14;
     padding: 0;
     margin: 0;
+}
+
+h3 {
+    font-weight: bold;
 }
 
 .body-wrapper {
@@ -29,7 +33,7 @@ body {
 }
 
 .nav-link {
-    color: wheat;
+    color: #000;
 }
 
 .navbar-nav .nav-link.active,
@@ -58,7 +62,7 @@ body {
 
 #other-links a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 #footer-socials svg {
@@ -87,7 +91,7 @@ body.rtl {
 
 #main-navbar {
     transition: 0.3s;
-    background: linear-gradient(135deg, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)) !important;
+    background: rgba(166, 254, 20, 0.8) !important;
     /* Add a smooth transition effect */
 }
 
@@ -210,7 +214,8 @@ body {
 }
 
 .card {
-    border-radius: 0;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Registration Form */
@@ -218,7 +223,8 @@ body {
 .registration-form input {
     position: relative;
     border-radius: 0 !important;
-    border: 1px solid #5c0000 !important;
+    border: 1px solid #ff4b2b !important;
+    border-radius: 5px !important;
     font-weight: bold !important;
 }
 
@@ -240,8 +246,8 @@ label {
 .registration-form select {
     position: relative;
     appearance: none;
-    border-radius: 0 !important;
-    border: 1px solid #5c0000 !important;
+    border-radius: 5px !important;
+    border: 1px solid #ff4b2b !important;
     padding: 16px 30px 16px 12px !important;
     font-weight: bold !important;
     color: black !important;
@@ -249,8 +255,8 @@ label {
 }
 
 .registration-form textarea {
-    border-radius: 0 !important;
-    border: 1px solid #5c0000 !important;
+    border-radius: 5px !important;
+    border: 1px solid #ff4b2b !important;
 }
 
 #form-bg {
@@ -260,11 +266,14 @@ label {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.2;
+    opacity: 0.5;
+    border-radius: 5px;
+    filter: blur(5px);
 }
 
 #web-footer {
-    background-color: #350000;
+    background-color: #a6fe14;
+    font-weight: bold;
 }
 
 #accordion-button {
@@ -284,19 +293,20 @@ label {
     position: relative;
     z-index: 1;
     background-color: #fff;
-    border: 1px solid #5c0000;
+    border: 1px solid #ff4b2b;
+    border-radius: 5px;
     color: black;
 }
 
 #submit-button {
-    background-color: rgba(53, 0, 0, 0.7);
-    border: 2px rgba(53, 0, 0, 0.8) !important;
+    background-color: rgba(255, 75, 43, 0.7);
+    border: 2px rgba(255, 75, 43, 0.8) !important;
     color: white;
     margin-top: 1rem;
 }
 
 #submit-button:hover {
-    background-color: rgba(53, 0, 0, 1);
+    background-color: rgba(255, 75, 43, 1);
 }
 
 #labelSex {
@@ -350,7 +360,7 @@ label {
 }
 
 #copyrightFooter {
-    background: linear-gradient(135deg, rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)) !important;
+    background: #ff4b2b !important;
 }
 
 #jksTitle {
