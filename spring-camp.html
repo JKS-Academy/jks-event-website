@@ -30,7 +30,7 @@
     <!-- bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/springcamp-style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
@@ -112,292 +112,72 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
-                        <div class="card w-100 mb-3 shadow shadow-lg">
+                    <div class="col-12" style="display: flex; justify-content: center;">
+                        <div class="card w-75 mb-3 shadow shadow-lg">
                             <div style="position: relative;">
-                                <img id="form-bg" src="assets/images/bg/jks-cup.jpg" style="z-index: 0;"></img>
+                                <img id="form-bg" src="assets/images/bg/jks-spring.jpeg" style="z-index: 0;"></img>
                                 <div id="registration-card" class="card-body" style="z-index: 1;">
                                     <h5 class="card-title h3 fw-bold text-black"></h5>
                                     <div id="compInfo" class="my-3 p-2 accordion-body w-100">
                                         <label>
                                             Spring Camp will be held from 18th March 2024 to 5th April 2024.
-                                            Online Registration Coming Soon!
+                                            Fill the form for Registration 🚀
+                                            <br />For More Info:
+                                            <a href="https://wa.me/+971585825001"
+                                                style="text-decoration: none; color: black;">📞+971585825001</a>
+
                                         </label>
                                     </div>
-                                    <!-- <p class="card-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
                                     <div id="registration-form" class="registration-form">
                                         <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;"
                                             onload="registration()"></iframe>
                                         <form
-                                            action="https://docs.google.com/forms/d/e/1FAIpQLSdfTfqCm_4t5EEoj9jePnSir352YcpnOj4lT_-HuciiAo_55g/formResponse"
+                                            action="https://docs.google.com/forms/d/e/1FAIpQLSd2R-bFuUzNEAqhObQ6uOrxZCZhyMY3KP1UnP-yUdYVhQmnsg/formResponse"
                                             method="post" target="hiddenConfirm" onsubmit="submitted=true;">
                                             <div class="mb-3 form-floating">
-                                                <input type="text" placeholder="Name of the Player" class="form-control"
-                                                    id="entry.2092238618" name="entry.2092238618" required>
-                                                <label for="entry.2092238618" id="labelPlayerName"></label>
+                                                <input type="text" placeholder="Parent Name*" class="form-control"
+                                                    id="entry.974368219" name="entry.974368219" required>
+                                                <label for="entry.974368219" id="labelPlayerName"></label>
                                             </div>
                                             <div class="row">
                                                 <div class="mb-3 col-12 col-lg-6">
                                                     <div class="form-floating">
-                                                        <input placeholder="Date of Birth" class="form-control"
-                                                            type="text" required onfocus="(this.type='date')"
-                                                            onblur="(this.type='text')" id="entry.1503997084"
-                                                            name="entry.1503997084">
-                                                        <label for="entry.1503997084" id="labelDob"></label>
+                                                        <input type="text" placeholder="Mobile/ Whatsapp No"
+                                                            class="form-control" id="entry.1079823040"
+                                                            name="entry.1079823040" pattern="^[+\d]{10,12}$" required>
+                                                        <label for="entry.1079823040" id="labelMobile"></label>
                                                     </div>
                                                 </div>
                                                 <div class="mb-3 col-12 col-lg-6">
                                                     <div class="form-floating">
-                                                        <input placeholder="Age" class="form-control" type="text"
-                                                            onfocus="(this.type='number')" onblur="(this.type='text')"
-                                                            id="entry.342131157" name="entry.342131157" required>
-                                                        <label for="entry.342131157" id="labelAge"></label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="mb-3 col-12 col-lg-6">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" aria-label="Default select example"
-                                                            id="entry.1597875817" name="entry.1597875817" required>
-                                                            <option id="optionSex" disabled selected value="">Sex
-                                                            </option>
-                                                            <option value="Male">Male</option>
-                                                            <option value="Female">Female</option>
-                                                            <option value="Other">Other</option>
-                                                        </select>
-                                                        <label for="entry.1597875817" id="labelSex"></label>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3 col-12 col-lg-6">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" aria-label="Default select example"
-                                                            id="entry.2099544009" name="entry.2099544009" required>
-                                                            <option disabled selected value="" id="optionBelt">Category
-                                                            </option>
-                                                            <option value="Children 10 - 11 Years Old Boy">Children 10 -
-                                                                11 Years Old Boy</option>
-                                                            <option value="Children 10 - 11 Years Old Girl">Children 10
-                                                                - 11 Years Old Girl</option>
-                                                            <option value="Children 12 - 13 Years Old Boy">Children 12 -
-                                                                13 Years Old Boy</option>
-                                                            <option value="Children 12 - 13 Years Old Girl">Children 12
-                                                                - 13 Years Old Girl</option>
-                                                            <option value="Cadet 14 - 15 Years Female -47Kg">Cadet 14 -
-                                                                15 Years Female -47Kg</option>
-                                                            <option value="Cadet 14 - 15 Years Female -54Kg">Cadet 14 -
-                                                                15 Years Female -54Kg</option>
-                                                            <option value="Cadet 14 - 15 Years Female +54Kg">Cadet 14 -
-                                                                15 Years Female +54Kg</option>
-                                                            <option value="Cadet 14 - 15 Years Male -57Kg">Cadet 14 - 15
-                                                                Years Male -57Kg</option>
-                                                            <option value="Cadet 14 - 15 Years Male -63Kg">Cadet 14 - 15
-                                                                Years Male -63Kg</option>
-                                                            <option value="Cadet 14 - 15 Years Male +63Kg">Cadet 14 - 15
-                                                                Years Male +63Kg</option>
-                                                            <option value="Junior 16 - 17 Years female -59Kg">Junior 16
-                                                                - 17 Years female -59Kg</option>
-                                                            <option value="Junior 16 - 17 Years female +59Kg">Junior 16
-                                                                - 17 Years female +59Kg</option>
-                                                            <option value="Junior 16 - 17 Years Male -61 Kg">Junior 16 -
-                                                                17 Years Male -61 Kg</option>
-                                                            <option value="Junior 16 - 17 Years Male -68 Kg">Junior 16 -
-                                                                17 Years Male -68 Kg</option>
-                                                            <option value="Junior 16 - 17 Years Male +68 Kg">Junior 16 -
-                                                                17 Years Male +68 Kg</option>
-                                                            <option value="Junior 18 - 21 Years Male">Junior 18 - 21
-                                                                Years Male</option>
-                                                            <option value="Junior 18 - 21 Years Female">Junior 18 - 21
-                                                                Years Female</option>
-                                                            <option value="Seniors 22 - 39 Years Male">Seniors 22 - 39
-                                                                Years Male</option>
-                                                            <option value="Seniors 22 - 39 Years Female">Seniors 22 - 39
-                                                                Years Female</option>
-                                                            <option value="Veterance 40 to 49 Male">Veterance 40 to 49
-                                                                Male</option>
-                                                            <option value="Veterance 40 to 49 Female">Veterance 40 to 49
-                                                                Female</option>
-                                                            <option value="Masters 50 Years and Above Male">Masters 50
-                                                                Years and Above Male</option>
-
-                                                        </select>
-                                                        <label for="entry.2099544009" id="labelBelt"></label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="mb-3 col-12 col-lg-6">
-                                                    <div class="form-floating">
-                                                        <input type="number" class="form-control" id="entry.788789591"
-                                                            placeholder="Height (cm)" name="entry.788789591"
-                                                            onfocus="(this.type='number')" onblur="(this.type='text')"
-                                                            required>
-                                                        <label for="entry.788789591" id="labelHeight"></label>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3 col-12 col-lg-6">
-                                                    <div class="form-floating">
-                                                        <input type="number" class="form-control" id="entry.432323271"
-                                                            placeholder="Weight (Kg)" name="entry.432323271" required>
-                                                        <label for="entry.432323271" id="labelWeight"></label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="mb-3 col-12 col-lg-6">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" placeholder="Country"
-                                                            id="entry.1515663701" name="entry.1515663701" required>
-                                                        <label for="entry.1515663701" id="labelCountry"></label>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3 col-12 col-lg-6">
-                                                    <div class="form-floating">
-                                                        <input type="text" placeholder="Mobile No" class="form-control"
-                                                            id="entry.1045485366" name="entry.1045485366"
-                                                            pattern="^[+\d]{10,12}$" required>
-                                                        <label for="entry.1045485366" id="labelMobile"></label>
+                                                        <input type="email" placeholder="Email"
+                                                            class="form-control" id="entry.7186744"
+                                                            name="entry.7186744" required>
+                                                        <label for="entry.7186744" id="labelEmail"></label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="mb-3 form-floating">
-                                                <textarea class="form-control" placeholder="Address"
-                                                    id="entry.1283544520" name="entry.1283544520" style="height: 100px"
+                                                <input type="text" placeholder="Name of Kid(s)" class="form-control"
+                                                    id="entry.1543275346" name="entry.1543275346" required>
+                                                <label for="entry.1543275346" id="labelKidsName"></label>
+                                            </div>
+                                            <div class="mb-3 form-floating">
+                                                <input type="text" placeholder="Age of Kid(s)" class="form-control"
+                                                    id="entry.1649496257" name="entry.1649496257" required>
+                                                <label for="entry.1649496257" id="labelKidsAge"></label>
+                                            </div>
+                                            <div class="mb-3 form-floating">
+                                                <textarea class="form-control" placeholder="Location/ Address"
+                                                    id="entry.979903932" name="entry.979903932" style="height: 100px"
                                                     required></textarea>
-                                                <label for="entry.1283544520" id="labelAddress"></label>
+                                                <label for="entry.979903932" id="labelAddress"></label>
                                             </div>
-                                            <div class="row">
-                                                <div class="mb-3 col-12 col-lg-6 ps-4">
-                                                    <label for="events" class="form-label" id="labelEvents"></label>
-                                                    <div class="form-check d-flex gap-5">
-                                                        <div>
-                                                            <input type="checkbox" class="form-check-input"
-                                                                id="kataCheck" name="entry.668494767" value="SEMINAR"
-                                                                required>
-                                                            <label class="form-check-label"
-                                                                for="kataCheck">SEMINAR</label>
-                                                        </div>
-                                                        <div>
-                                                            <input type="checkbox" class="form-check-input"
-                                                                id="kumiteCheck" name="entry.668494767" value="KUMITE"
-                                                                required>
-                                                            <label class="form-check-label"
-                                                                for="kumiteCheck">KUMITE</label>
-                                                        </div>
-                                                    </div>
-                                                    <label class="fw-light">To know more about <a
-                                                            href="assets/pdf/KUMITE DETAILS.pdf"
-                                                            target="_blank">Kumite</a> & <a
-                                                            href="assets/pdf/SEMINAR  DETAILS.pdf"
-                                                            target="_blank">Seminar</a> Events!</label>
-                                                </div>
-                                                <div class="mb-3 col-12 col-lg-6">
-                                                    <div class="form-floating">
-                                                        <input type="text" placeholder="Name of the Club"
-                                                            class="form-control" id="entry.173572202"
-                                                            name="entry.173572202" required>
-                                                        <label for="entry.173572202" id="labelClubName"></label>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="mb-3 col-12 col-lg-6">
-                                                    <div class="form-floating">
-                                                        <input type="text" placeholder="Name of the Instructor"
-                                                            class="form-control" id="entry.232038116"
-                                                            name="entry.232038116" required>
-                                                        <label for="entry.232038116" id="labelInsructorName">Instructor
-                                                            Name</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mb-3 col-12 col-lg-6">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" aria-label="Dietary restrictions"
-                                                            id="entry.202302837" name="entry.202302837" required>
-                                                            <option selected disabled value="" id="optionFood">
-                                                            </option>
-                                                            <option value="Veg">Veg</option>
-                                                            <option value="Non Veg">Non-Veg</option>
-                                                        </select>
-                                                        <label for="entry.202302837" id="labelFood">Dietary
-                                                            Restrictions</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 form-check d-flex gap-5">
-                                                <div class="ps-2">
-                                                    <input type="checkbox" class="form-check-input" id="entry.819354817"
-                                                        name="entry.819354817" value="I agree" required>
-                                                    <label class="form-check-label" for="entry.819354817"
-                                                        id="labelWaiver">By checking
-                                                        this, I Agree to the
-                                                    </label>
-                                                    <button id="waiverButton" type="button" role="li'" class="fw-bold"
-                                                        onclick="openAccordion()">Waiver</a>
-                                                </div>
-                                            </div>
-                                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="flush-headingOne">
-                                                        <button id="accordion-button" class="accordion-button collapsed"
-                                                            type="button" data-bs-toggle="collapse"
-                                                            data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                                            aria-controls="flush-collapseOne">
-                                                            Waiver
-                                                        </button>
-                                                    </h2>
-                                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                                        aria-labelledby="flush-headingOne"
-                                                        data-bs-parent="#accordionFlushExample">
-                                                        <div class="accordion-body" id="waiverStatement">I <span
-                                                                id="waiverName"
-                                                                class="fw-bold text-decoration-underline"></span> hereby
-                                                            submit my application for the participation in the JKS
-                                                            Friendship Kumite League and Seminar , on 16th September
-                                                            2023 and 17th September 2023 at LLFPM School , Meydan -
-                                                            Dubai , UAE. I admit that there are risks of injury involved
-                                                            in participating in the tournament. I claim full
-                                                            responsibility for myself in this event. I hereby waive
-                                                            release any and all claims, cause of action, losses,
-                                                            damages, cost, either known, now existing or arising in the
-                                                            future, that I may have of whatever nature against any
-                                                            tournament organizer or anyone involved in any way with the
-                                                            tournament. I also agree that any of my photographs taken
-                                                            during the tournament can be used by the organizers for the
-                                                            publicity or promotion of JKS without further permission
-                                                            from me and also confirming that I am medically fit for
-                                                            participating the karate championship. There is no health
-                                                            issues and will get consult and advise from Doctor before
-                                                            participating the event. By signing this document, I
-                                                            acknowledge that I have read the rules and agree to abide by
-                                                            them and assume full responsibility, for any and all my
-                                                            actions during this tournament.(if the candidate is under
-                                                            the age of 17 years, the parent or legal guardian must
-                                                            sign this waiver).</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="compInfo" class="my-3 p-2 accordion-body w-100">
-                                                <label>
-                                                    Note:-<br />
-                                                    Kumite League Online Registration is Closed!<br />
-                                                    Location : LLFPM School , Meydan Dubai - UAE<br />
-                                                    Kumite League Date & Time : 16th September 2023, 5PM to 9 PM ( UAE
-                                                    Time )<br />
-                                                    Seminar Date & Time : 17th September 2023, 2PM to 5 PM (UAE Time
-                                                    )<br />
-                                                    Last Registration : 14th September 2023 ( 11 PM UAE Time )
-                                                </label>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <div class="w-100 d-flex justify-content-end">
-                                                    <button id="submit-button" type="submit" class="btn">SUBMIT</button>
-                                                </div>
+                                            <div class="w-100 d-flex justify-content-end">
+                                                <button id="submit-button" type="submit" class="btn w-100">SUBMIT</button>
                                             </div>
                                         </form>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -497,7 +277,7 @@
                 </div>
             </div>
         </div> -->
-        <footer id="web-footer" class="text-white">
+        <footer id="web-footer" class="text-black">
             <div class="banner position-relative">
                 <img src="assets/images/banner/banner-2.jpg" alt="">
             </div>
@@ -508,17 +288,19 @@
                             <img src="assets/images/logo/jks-academy-logo.png" alt="JKS Academy Logo">
                         </a>
                         <div>
-                            <p id="footerContent" class="text-white fst-italic">
+                            <p id="footerContent" class="fst-italic">
                             </p>
                             <hr class="d-block bg-white border-white" />
                         </div>
-                        <div id="basic-contact" class="text-white d-flex justify-content-between">
+                        <div id="basic-contact" class="text-black d-flex justify-content-between">
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                    <path
-                                        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                                </svg> +971 58 582 5001
+                                <a href="https://wa.me/+971585825001" style="text-decoration: none; color: black;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                        <path
+                                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                    </svg> +971 58 582 5001
+                                </a>
                             </div>
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -527,7 +309,7 @@
                                         d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
                                     <path
                                         d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
-                                </svg> <a style="text-decoration: none; color: white;"
+                                </svg> <a style="text-decoration: none; color: black;"
                                     href="mailto:jkskarateuae@gmail.com">info@jkskarate.com</a>
                             </div>
                         </div>
